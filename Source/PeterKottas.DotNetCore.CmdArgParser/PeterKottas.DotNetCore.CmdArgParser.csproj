@@ -1,13 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project>
 
-  <PropertyGroup>
-    <VersionPrefix>1.0.1</VersionPrefix>
-    <TargetFramework>net7</TargetFramework>
-    <AssemblyName>PeterKottas.DotNetCore.CmdArgParser</AssemblyName>
-    <PackageId>PeterKottas.DotNetCore.CmdArgParser</PackageId>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-  </PropertyGroup>
+    <Import Project="$(VS_COMMON_PATH)\project.ext-lib.neutral.props"/>
+    <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+    <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+    <PropertyGroup>
+		<VersionPrefix>1.0.1</VersionPrefix>
+		<AssemblyName>PeterKottas.DotNetCore.CmdArgParser</AssemblyName>
+    </PropertyGroup>
 
 </Project>
